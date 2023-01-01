@@ -119,25 +119,34 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 35px;
+    position: relative;
 }
 
 .location{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 50%;
+    position: relative;
+}
+
+.position{
     font-size: 28px;
     font-weight: 600;
-    display: flex;
+    width: 100%;
+    overflow: hidden;
+    line-break: auto;
+    word-wrap: break-word;
 }
 
 .country{
-    font-size: 14px;
-    margin-left: 10px;
-    background-color: gold;
-    height: fit-content;
-    padding: 3px 5px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    background-color: rgb(235, 176, 27);
+    font-size: 13px;
     font-weight: 600;
+    padding: 2px 3px;
+    border-radius: 10px;
 }
 
 .temp{
@@ -172,5 +181,9 @@ main{
 
     .app-body{
         width: 85%;
+    }
+
+    .position{
+        font-size: 24px;
     }
 }

@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
 
             <div class="second-section">
                 <div class="location">
-                    ${data.name} <span class="country">${data.sys.country}</span>
+                    <span class="position">${data.name}</span> <span class="country">${data.sys.country}</span>
                 </div>
 
                 <div class="temp">${Math.floor(data.main.temp_max - 273.15)}<span class="small">°C</span></div>
@@ -105,7 +105,7 @@ function showWeather(weatherdata){
 
         <div class="second-section">
             <div class="location">
-                ${data.name} <span class="country">${data.sys.country}</span>
+                <span class="position">${data.name}</span> <span class="country">${data.sys.country}</span>
             </div>
 
             <div class="temp">${Math.floor(data.main.temp_max - 273.15)}<span class="small">°C</span></div>
