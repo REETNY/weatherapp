@@ -75,6 +75,7 @@ async function getGeolocation(userInput){
     const serverResponse = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${userInput}&limit=5&appid=`+APIKEY);
     const resp = await serverResponse.json();
     const response = resp[0];
+    console.log(resp)
     const data = response;
     getCurrentWeather(data);
 }

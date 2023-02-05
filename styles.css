@@ -11,7 +11,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background: url(/BG/weather.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .app-body{
@@ -125,14 +129,14 @@ main{
 .location{
     display: flex;
     justify-content: flex-start;
-    flex-basis: 50%;
+    width: fit-content;
     position: relative;
 }
 
 .position{
     font-size: 28px;
     font-weight: 600;
-    width: 100%;
+    width: fit-content;
     overflow: hidden;
     line-break: auto;
     word-wrap: break-word;
